@@ -129,7 +129,7 @@ def schedule_reminder(appointment_id):
     if send_at <= timezone.now():
         return
 
-    result = send_appointment_reminder.apply_async(appointment.id, eta=send_at)
+    result = send_appointment_reminder.apply_async((appointment.id,), eta=send_at)
     (Appointment.objects.filter(pk=appointment.pk).update(reminder_task_id=result.id))
 
 @shared_task(bind=True)
