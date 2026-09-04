@@ -1,0 +1,38 @@
+.chatHeader {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.chatMessages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chatBubble {
+    max-width: 85%;
+    background: var(--gray-bg);
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    align-self: flex-start;
+    overflow-wrap: anywhere;
+}
+
+.chatBubbleMine {
+    background: var(--green-light);
+    align-self: flex-end;
+}
+
+.chatBubbleTime {
+    text-align: right;
+}
+
+.chatInputRow {
+    padding-top: 12px;
+    border-top: 1px solid var(--gray-border);
+}
+
+.row.chatInputRow .input {
+    flex: 1;
+    min-width: 0;
+}

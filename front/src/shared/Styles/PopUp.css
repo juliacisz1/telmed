@@ -1,0 +1,30 @@
+.popupOverlay {
+    position: fixed;
+    inset: 0;
+    background: var(--gray-dark);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: #ffffff;
+    border-radius: var(--radius-big);
+    padding: 24px;
+    width: min(560px, 92vw);
+    box-shadow: var(--shadow);
+}
+
+.popupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.popupBody {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

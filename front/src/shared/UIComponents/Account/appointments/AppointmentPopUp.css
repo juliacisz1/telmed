@@ -1,0 +1,15 @@
+.appointmentDetails {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.rescheduleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cancelConfirm {
+    text-align: center;
+}

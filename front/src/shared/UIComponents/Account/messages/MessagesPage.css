@@ -1,0 +1,18 @@
+.messagesMain {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 16px;
+    padding: 24px 16px;
+    align-items: start;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: calc(100vh - 160px);
+}
+
+.chatPlaceholder {
+    margin: auto;
+}

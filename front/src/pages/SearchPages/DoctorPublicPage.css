@@ -1,0 +1,106 @@
+.publicMain {
+    padding: 32px 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.publicLayout {
+    display: grid;
+    grid-template-columns: 300px 620px 300px;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.publicCard {
+    grid-column: 2;
+    max-height: calc(100vh - 170px);
+}
+
+
+.publicCardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--gray-border);
+    flex-shrink: 0;
+}
+
+.ratingSummary {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.ratingNumber {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.starRating {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.starsBg {
+    color: var(--gray-border);
+}
+
+.starsFill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--star);
+}
+
+.publicSection {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookedMessage {
+    margin-top: 16px;
+    color: var(--green-dark);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.reviewsBar {
+    grid-column: 3;
+    max-height: calc(100vh - 160px);
+}
+
+.reviewCard {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.reviewCard:last-child {
+    border-bottom: none;
+}
+
+.bookingNotice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.publicContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-top: 10px;
+}

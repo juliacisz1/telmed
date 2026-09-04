@@ -1,0 +1,168 @@
+.page {
+    background: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.topBar {
+    padding: 16px 20px;
+}
+
+.topBarInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px 24px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.rowCenter {
+    justify-content: center;
+}
+
+.rowBetween {
+    justify-content: space-between;
+}
+
+.rowEnd {
+    justify-content: flex-end;
+}
+
+.fieldRow {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.fieldRow > * {
+    flex: 1;
+}
+
+.logoText {
+    font-family: 'Pacifico', cursive;
+    color: var(--green-dark);
+    font-weight: normal;
+}
+
+.formError {
+    color: var(--red);
+    font-size: 13px;
+    align-self: flex-start;
+}
+
+.routeInstance {
+    display: contents;
+}
+
+.dashboardMain,
+.listMain {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 16px;
+    align-items: start;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 16px 24px 24px;
+}
+
+.dashboardMain .card,
+.listMain .card {
+    max-width: none;
+}
+
+.patientsMain,
+.documentsMain,
+.listContent,
+.searchResults,
+.visitGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+.listContent,
+.searchResults,
+.visitGroup {
+    padding: 0;
+    max-width: none;
+}
+
+.scrollArea {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.scrollBox {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.react-datepicker {
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius-big);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.react-datepicker__header {
+    background: white;
+    border-bottom: 1px solid var(--gray-border);
+    border-radius: var(--radius-big) var(--radius-big) 0 0;
+    padding-top: 12px;
+}
+
+.react-datepicker__month-container {
+    width: 100%;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+    width: 2.8rem;
+    line-height: 2.8rem;
+    margin: 3px;
+    border-radius: var(--radius);
+}
+
+.react-datepicker__day--today {
+    background: var(--green-light);
+    color: var(--green-dark);
+    font-weight: bold;
+}
+
+.react-datepicker__day--selected {
+    background: var(--green-dark);
+    color: white;
+    font-weight: bold;
+}
+
+.react-datepicker__day--disabled {
+    color: var(--gray-dark);
+}

@@ -1,0 +1,60 @@
+.input {
+    width: 100%;
+    border: 1px solid var(--gray-dark);
+    border-radius: var(--radius);
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--text);
+    background: white;
+}
+
+.input:focus {
+    outline: 2px solid var(--green-dark);
+    outline-offset: -2px;
+    background: var(--green-light);
+}
+
+.input:disabled {
+    background: var(--gray-bg);
+    color: var(--gray-text);
+    border-color: var(--gray-border);
+}
+
+.smallInput {
+    width: auto;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+.smallInput[type="number"] {
+    width: 80px;
+}
+
+textarea.input {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

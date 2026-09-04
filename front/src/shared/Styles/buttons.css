@@ -1,0 +1,210 @@
+.greenBtn {
+    background: var(--green-dark);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.greenBtn:hover {
+    background: var(--green-darker);
+}
+
+.greenBtn:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+
+.greenBtnSmall {
+    background: var(--green-dark);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    padding: 6px 12px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.greenBtnSmall:hover {
+    background: var(--green-darker);
+}
+
+.greenBtnSmall:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+
+.whiteBtn {
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--gray-dark);
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.whiteBtn:hover {
+    background: var(--gray-bg);
+}
+
+.redBtn {
+    background: var(--red);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.redBtn:hover {
+    background: var(--red-dark);
+}
+
+.linkBtn {
+    background: none;
+    border: none;
+    padding: 4px 0;
+    color: var(--green-dark);
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.linkBtn:hover {
+    text-decoration: underline;
+}
+
+.dangerLinkBtn {
+    background: none;
+    border: none;
+    padding: 4px 0;
+    color: var(--red);
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.dangerLinkBtn:hover {
+    text-decoration: underline;
+}
+
+
+.slot {
+    background: white;
+    color: var(--green-dark);
+    border: 1px solid var(--green-dark);
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slot:hover {
+    background: var(--green-light);
+}
+
+.slotActive {
+    background: var(--green-dark);
+    color: white;
+}
+
+.logoBtn {
+    border: none;
+    background: none;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: var(--green-dark);
+    cursor: pointer;
+}
+
+.tileButton {
+    width: 500px;
+    border: 1px solid var(--gray-border);
+    border-radius: var(--radius-big);
+    padding: 18px;
+    background: white;
+    cursor: pointer;
+}
+
+.tileButton:hover {
+    background: var(--green-light);
+    border-color: var(--green-dark);
+}
+
+.popupCloseBtn {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: var(--gray-text);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: var(--radius);
+}
+
+.popupCloseBtn:hover {
+    background: var(--gray-bg);
+    color: var(--text);
+}
+
+.absenceEditBtn {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    flex: 1;
+}
+
+.absenceEditBtn:hover {
+    text-decoration: underline;
+}
+
+
+.fullWidth {
+    width: 100%;
+}
+
+.greenBtn:focus-visible,
+.greenBtnSmall:focus-visible,
+.whiteBtn:focus-visible,
+.redBtn:focus-visible,
+.linkBtn:focus-visible,
+.dangerLinkBtn:focus-visible,
+.slot:focus-visible,
+.tileButton:focus-visible {
+    outline: 2px solid var(--green-dark);
+    outline-offset: 2px;
+}
+
+.linkBtn:disabled,
+.dangerLinkBtn:disabled {
+    opacity: 0.55;
+    cursor: default;
+    text-decoration: none;
+}

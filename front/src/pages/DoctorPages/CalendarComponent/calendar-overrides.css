@@ -1,0 +1,127 @@
+.rbc-toolbar button {
+    color: var(--green-dark);
+    border: 1px solid var(--green-dark);
+    border-radius: var(--radius);
+    font-weight: bold;
+}
+
+.rbc-toolbar button:hover,
+.rbc-toolbar button:focus {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button:active:hover,
+.rbc-toolbar button:active:focus {
+    background: var(--green-light);
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+    box-shadow: none;
+}
+
+.rbc-toolbar button.rbc-active,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button.rbc-active:focus {
+    background: var(--green-dark);
+    color: white;
+    border-color: var(--green-dark);
+    box-shadow: none;
+}
+
+.rbc-today {
+    background-color: var(--green-light);
+}
+
+.rbc-month-view .rbc-day-bg {
+    cursor: pointer;
+}
+
+.rbc-event {
+    background-color: var(--green-dark);
+    border: none;
+    border-radius: var(--radius);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.2;
+    overflow: hidden;
+}
+
+.rbc-event-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rbc-event:focus,
+.rbc-event.rbc-selected {
+    background-color: var(--green-dark);
+    outline: none;
+}
+
+.rbc-current-time-indicator {
+    background-color: var(--green-dark);
+}
+
+.rbc-header {
+    font-weight: bold;
+    color: var(--gray-text);
+    border-bottom: 1px solid var(--gray-border);
+    padding: 6px 0;
+}
+
+.rbc-time-content {
+    border-top: 1px solid var(--gray-border);
+}
+
+.rbc-timeslot-group {
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.rbc-time-slot {
+    color: var(--gray-text);
+    font-size: 13px;
+}
+
+.rbc-allday-cell {
+    display: none;
+}
+
+.rbc-time-header-content > .rbc-row.rbc-row-resource {
+    display: none;
+}
+
+.rbc-time-header-content {
+    border-bottom: none;
+}
+
+.rbc-background-event {
+    background: var(--gray-mid);
+    opacity: 0.6;
+    color: var(--gray-text);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.rbc-time-view .calendarOffHours,
+.rbc-month-view .calendarOffHours {
+    background: var(--gray-bg);
+}
+
+.rbc-event.calendarAbsenceEvent {
+    background: var(--gray-mid);
+    color: var(--gray-text);
+    border: none;
+}
+
+.doctorCalendar {
+    height: calc(100vh - 280px);
+    min-height: 500px;
+}
+
+.calendarPastEvent {
+    opacity: 0.55;
+}

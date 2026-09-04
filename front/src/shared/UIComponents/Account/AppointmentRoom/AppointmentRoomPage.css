@@ -1,0 +1,58 @@
+.roomMain {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 16px;
+    padding: 16px;
+    height: calc(100vh - 90px);
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.videoColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 0;
+}
+
+.videoArea {
+    position: relative;
+    background: #1c1c1c;
+    border-radius: var(--radius-big);
+    overflow: hidden;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remoteVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.localVideo {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 220px;
+    border-radius: var(--radius);
+    border: 2px solid #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.waitingInfo {
+    position: absolute;
+}
+
+.endedBanner {
+    background: var(--green-light);
+    color: var(--green-dark);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+}

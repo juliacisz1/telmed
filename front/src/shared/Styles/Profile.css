@@ -1,0 +1,26 @@
+.profileColumn {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profileColumn > h1 {
+    text-align: center;
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--gray-border);
+}
+
+.formSuccess {
+    color: var(--green-dark);
+    font-size: 14px;
+    font-weight: bold;
+}
