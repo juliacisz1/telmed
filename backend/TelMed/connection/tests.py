@@ -13,6 +13,7 @@ from TelMed.appointments.models import Appointment
 from TelMed.connection.models import Conversation
 from TelMed.users.models import Doctor, Patient, User
 
+from TelMed_backend.asgi import application
 
 PASSWORD = 'VeryDifficultTestPassword123.'
 
@@ -67,7 +68,6 @@ class WebSocketTests(TransactionTestCase):
                                                       end_time=now + timedelta(minutes=25))
 
     def connect_as(self, user):
-        from TelMed_backend.asgi import application
         token = str(RefreshToken.for_user(user).access_token)
         return WebsocketCommunicator(application, f'/ws/appointment-chat/{self.appointment.id}/', headers=[
             (b'origin', b'http://localhost'), (b'host', b'localhost'),
@@ -113,7 +113,6 @@ class VideoSignallingTests(TransactionTestCase):
                                                       end_time=now + timedelta(minutes=25))
 
     def connect_as(self, user):
-        from TelMed_backend.asgi import application
         token = str(RefreshToken.for_user(user).access_token)
         return WebsocketCommunicator(application, f'/ws/connection/{self.appointment.id}/', headers=[
             (b'origin', b'http://localhost'), (b'host', b'localhost'),

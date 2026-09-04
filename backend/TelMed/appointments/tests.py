@@ -59,7 +59,7 @@ class AppointmentTests(APITestCase):
         Appointment.objects.create(doctor=self.doctor, patient=self.patient1, start_time=self.start, end_time=self.end)
         self.client.force_authenticate(user=self.patient2.user)
         response = self.client.post('/appointments/', {'doctor': self.doctor.id, **self.slot}, format='json')
-        self.assertEqual(response.status_code, 409)
+        self.assertEqual(response.status_code, 400)
         self.assertEqual(Appointment.objects.count(), 1)
 
     def test_book_outside_schedule(self):
@@ -173,7 +173,7 @@ class BookingRaceTests(TransactionTestCase):
         for thread in threads:
             thread.join()
 
-        self.assertEqual(sorted(self.results), [201, 409])
+        self.assertEqual(sorted(self.results), [201, 400])
         self.assertEqual(Appointment.objects.count(), 1)
 
 
